@@ -1,0 +1,6 @@
+.dddd{
+background: rgb(177,239,150);
+background: linear-gradient(0deg, rgba(177,239,150,1) 0%, rgba(145,227,255,1) 100%); 
+ }
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ *{font-family:Poppins, sans-serif}

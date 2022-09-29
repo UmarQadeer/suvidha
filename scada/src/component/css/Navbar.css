@@ -1,0 +1,7 @@
+.navbar_background{
+    background: rgb(146, 227, 251);
+}
+.active, ::after{
+  background-color: #79a267; 
+  border-radius: 8px;
+}
