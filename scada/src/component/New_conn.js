@@ -1,32 +1,31 @@
-import { Link, Route, Routes } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { NavLink } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import './css/new_conn.css'
 
+
+
+
 export function New_conn() {
+  
     return (
         <>
 
-            <Container className="dd">
+            <Container>
                 <hr />
-                <h3>NEW CONNECTION</h3>
+                <h3> New connection</h3>
                 <hr />
                 <br />
 
-                <Form>
+                <Form className='common_css'>
 
                     {/* first part starts************************************************ */}
 
                     <Row className="mb-3">
                         <Form.Group as={Col}>
-                            <Form.Label>1) Connection Type</Form.Label>
+                            <Form.Label>Connection Type</Form.Label>
                             <Form.Select aria-label="Default select example" size="sm">
                                 {/* <option>Open this select menu</option> */}
                                 <option value="1">Domestic</option>
@@ -37,7 +36,7 @@ export function New_conn() {
                         </Form.Group>
 
                         <Form.Group as={Col}>
-                            <Form.Label>2) Connection Details</Form.Label>
+                            <Form.Label>Connection Details</Form.Label>
                             <Form.Select aria-label="Default select example" size="sm">
                                 {/* <option>Open this select menu</option> */}
                                 <option value="1">Low Tension</option>
@@ -50,7 +49,7 @@ export function New_conn() {
 
                     <Row className="mb-3">
                         <Form.Group as={Col}>
-                            <Form.Label>3) Tarrif </Form.Label>
+                            <Form.Label>Tarrif </Form.Label>
                             <Form.Select aria-label="Default select example" size="sm">
                                 {/* <option>Open this select menu</option> */}
                                 <option value="1">Low Tension</option>
@@ -61,7 +60,7 @@ export function New_conn() {
 
 
                         <Form.Group as={Col}>
-                            <Form.Label>4) Phase</Form.Label>
+                            <Form.Label>Phase</Form.Label>
                             <Form.Select aria-label="Default select example" size="sm">
                                 {/* <option>Open this select menu</option> */}
                                 <option value="1">1</option>
@@ -72,98 +71,98 @@ export function New_conn() {
                     </Row>
 
                     <Row className="mb-3">
-                    <Form.Group as={Col}>
-                        <Form.Label>5) Load</Form.Label>
-                        {/* <Form.Select aria-label="Default select example" size="sm"> */}
-                        <Form.Control type="text" placeholder="Enter Required Load " size="sm" />
-                    </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Load</Form.Label>
+                            {/* <Form.Select aria-label="Default select example" size="sm"> */}
+                            <Form.Control type="text" placeholder="Enter Required Load " size="sm" />
+                        </Form.Group>
                     </Row>
                     <br />
 
                     {/* second part starts****************************************************** */}
 
                     <br />   <br />    <hr />
-                    <h3>LOCATION OF PERMISES WHERE SUPPLY IS REQUIRED</h3>
+                    <h4>LOCATION OF PERMISES WHERE SUPPLY IS REQUIRED</h4>
                     <hr />
                     <br />
 
                     <Row className="mb-3">
-                    <Form.Group as={Col}>
-                        <Form.Label>1) District</Form.Label>
-                        <Form.Select aria-label="Default select example" size="sm">
-                            {/* <option>Open this select menu</option> */}
-                            <option value="1">1</option>
-                            <option value="2">3</option>
+                        <Form.Group as={Col}>
+                            <Form.Label>District</Form.Label>
+                            <Form.Select aria-label="Default select example" size="sm">
+                                {/* <option>Open this select menu</option> */}
+                                <option value="1">1</option>
+                                <option value="2">3</option>
 
-                        </Form.Select>
-                    </Form.Group>
-                    
-                    <Form.Group as={Col}>
-                        <Form.Label>2) Block</Form.Label>
-                        <Form.Select aria-label="Default select example" size="sm">
-                            {/* <option>Open this select menu</option> */}
-                            <option value="1">1</option>
-                            <option value="2">3</option>
+                            </Form.Select>
+                        </Form.Group>
 
-                        </Form.Select>
-                    </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Block</Form.Label>
+                            <Form.Select aria-label="Default select example" size="sm">
+                                {/* <option>Open this select menu</option> */}
+                                <option value="1">1</option>
+                                <option value="2">3</option>
+
+                            </Form.Select>
+                        </Form.Group>
                     </Row>
 
                     <Row className="mb-3">
-                    <Form.Group as={Col}>
-                        <Form.Label>3) Panchayat</Form.Label>
-                        <Form.Select aria-label="Default select example" size="sm">
-                            {/* <option>Open this select menu</option> */}
-                            <option value="1">1</option>
-                            <option value="2">3</option>
+                        <Form.Group as={Col}>
+                            <Form.Label>Panchayat</Form.Label>
+                            <Form.Select aria-label="Default select example" size="sm">
+                                {/* <option>Open this select menu</option> */}
+                                <option value="1">1</option>
+                                <option value="2">3</option>
 
-                        </Form.Select>
-                    </Form.Group>
-                    
-                    <Form.Group as={Col}>
-                        <Form.Label>4) Village/Ward</Form.Label>
-                        <Form.Select aria-label="Default select example" size="sm">
-                            {/* <option>Open this select menu</option> */}
-                            <option value="1">1</option>
-                            <option value="2">3</option>
+                            </Form.Select>
+                        </Form.Group>
 
-                        </Form.Select>
-                    </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Village/Ward</Form.Label>
+                            <Form.Select aria-label="Default select example" size="sm">
+                                {/* <option>Open this select menu</option> */}
+                                <option value="1">1</option>
+                                <option value="2">3</option>
+
+                            </Form.Select>
+                        </Form.Group>
                     </Row>
                     <Row className="mb-3">
-                    <Form.Group as={Col}>
-                        <Form.Label>5) Division</Form.Label>
-                        <Form.Select aria-label="Default select example" size="sm">
-                            {/* <option>Open this select menu</option> */}
-                            <option value="1">1</option>
-                            <option value="2">3</option>
+                        <Form.Group as={Col}>
+                            <Form.Label>Division</Form.Label>
+                            <Form.Select aria-label="Default select example" size="sm">
+                                {/* <option>Open this select menu</option> */}
+                                <option value="1">1</option>
+                                <option value="2">3</option>
 
-                        </Form.Select>
-                    </Form.Group>                    
-                    <Form.Group  as={Col}>
-                        <Form.Label>6) Sub Division</Form.Label>
-                        <Form.Select aria-label="Default select example" size="sm">
-                            {/* <option>Open this select menu</option> */}
-                            <option value="1">1</option>
-                            <option value="2">3</option>
-                        </Form.Select>
-                    </Form.Group>
-                  </Row>
-                  <Row className="mb-3">
-                    <Form.Group  as={Col}>
-                        <Form.Label>7) Section</Form.Label>
-                        <Form.Select aria-label="Default select example" size="sm">
-                            {/* <option>Open this select menu</option> */}
-                            <option value="1">1</option>
-                            <option value="2">3</option>
+                            </Form.Select>
+                        </Form.Group>
+                        <Form.Group as={Col}>
+                            <Form.Label>Sub Division</Form.Label>
+                            <Form.Select aria-label="Default select example" size="sm">
+                                {/* <option>Open this select menu</option> */}
+                                <option value="1">1</option>
+                                <option value="2">3</option>
+                            </Form.Select>
+                        </Form.Group>
+                    </Row>
+                    <Row className="mb-3">
+                        <Form.Group as={Col}>
+                            <Form.Label>Section</Form.Label>
+                            <Form.Select aria-label="Default select example" size="sm">
+                                {/* <option>Open this select menu</option> */}
+                                <option value="1">1</option>
+                                <option value="2">3</option>
 
-                        </Form.Select>
-                    </Form.Group>
+                            </Form.Select>
+                        </Form.Group>
                     </Row>
                     {/* third part starts*********************************************** */}
 
                     <br />   <br />    <hr />
-                    <h3>APPLICANTS DETAILS</h3>
+                    <h4>APPLICANTS DETAILS</h4>
                     <hr />
                     <br />
 
@@ -171,13 +170,13 @@ export function New_conn() {
 
                     <Row className="mb-3">
                         <Form.Group as={Col} controlId="formGridF_name">
-                            <Form.Label>First name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter First Name" />
+                            <Form.Label>Name</Form.Label>
+                            <Form.Control type="text" placeholder="Enter Your Name" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridL_Name">
-                            <Form.Label>Last name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Last Name" />
+                            <Form.Label>Father/Husband's name</Form.Label>
+                            <Form.Control type="text" placeholder="Enter Father's / Husband's Name" />
                         </Form.Group>
                     </Row>
 
@@ -235,67 +234,80 @@ export function New_conn() {
                         </Form.Group>
                     </Row>
 
+
+
+
                     <Row className="mb-3">
-                        <Form.Group className="mb-3" controlId="formGridDoc">
+
+
+                        <Form.Group as={Col} controlId="formGridDoc">
                             <Form.Label>Document Type</Form.Label>
-                            <Form.Control placeholder="Identity Proof" />
-                        </Form.Group>
-                        <Form.Group as={Col} controlId="formGriddoc_front">
-                            <Form.Label>Upload Front Page</Form.Label>
-                            <Form.Control type="file" />
+                            <Form.Select defaultValue="Choose...">
+                                <option>Choose...</option>
+                                <option>Driving License</option>
+                                <option>Adhar Card</option>
+                                <option>Ration Card</option>
+                            </Form.Select>
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGriddoc_back">
-                            <Form.Label>Upload Back Page</Form.Label>
+
+
+                        <Form.Group as={Col} controlId="formGriddoc_front">
+                            <Form.Label>Upload Documnet</Form.Label>
                             <Form.Control type="file" />
                         </Form.Group>
                     </Row>
+
+
+
 
 
                     <Row className="mb-3">
-                        <Form.Group className="mb-3" controlId="formGridAdd">
-                            <Form.Label>Address Type</Form.Label>
-                            <Form.Control placeholder="Address Proof" />
+                        <Form.Group as={Col} controlId="formGridAdd">
+                            <Form.Label>Address Proof Type</Form.Label>
+                            <Form.Select defaultValue="Choose...">
+                                <option>Choose...</option>
+                                <option>Driving License</option>
+                                <option>Adhar Card</option>
+                                <option>Ration Card</option>
+                            </Form.Select>
                         </Form.Group>
+                    </Row>
+                    <Row className="mb-3">
                         <Form.Group as={Col} controlId="formGridadd_front">
-                            <Form.Label>Upload Front Page</Form.Label>
+                            <Form.Label>Address Proof Front Pic </Form.Label>
+                            <Form.Control type="file" />
+                        </Form.Group>
+                        <Form.Group as={Col} controlId="formGridadd_back">
+                            <Form.Label>Address Proof Back Pic</Form.Label>
                             <Form.Control type="file" />
                         </Form.Group>
 
-                        <Form.Group as={Col} controlId="formGridadd_back">
-                            <Form.Label>Upload Back Page</Form.Label>
+
+                    </Row>
+                    <Row className="mb-3">
+                        <Form.Group as={Col} controlId="formGridAdd">
+                            <Form.Label>Photo of OwnerShip</Form.Label>
                             <Form.Control type="file" />
                         </Form.Group>
                     </Row>
-
 
 
 
                     <Form.Group className="mb-3" id="formGridCheckbox">
-                        <Form.Check type="checkbox" label="By checking this box, every details provided by you is correct, any fault can put you in trouble and you are agreeing to our terms of service" />
+                        <Form.Check type="checkbox" label="By checking this box, every details provided by you is correct, any fault can put you in trouble, moreover you are agreeing to our terms of service" />
                     </Form.Group>
 
 
 
-                    <div className="d-grid gap-2">
-                        <Button variant="success" type="submit">
-                            SUBMIT
-                        </Button>
-                    </div>
+                    <Button variant="primary" size="sm">
+                        Submit
+                    </Button>
                 </Form>
-
-
-
-
-
-
-
-
-
 
             </Container>
 
-
+            <br /><br /><br />  <br />
 
         </>
     )
