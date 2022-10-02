@@ -9,6 +9,8 @@ import { New_conn } from './component/New_conn';
 import { Sign_Up } from './component/Sign_Up';
 import { For_pass } from './component/For_pass';
 import { Chng_pass } from './component/Chng_pass';
+import { Ad_home } from './component/admin/Ad_home';
+import { Blocks } from './component/admin/Blocks';
 
 import './app.css'
 
@@ -34,6 +36,13 @@ function App() {
         <Route path='/sign_up' element={<Sign_Up />} />
         <Route path='/for_pass' element={<For_pass />} />
         <Route path='/chng_pass' element={<Chng_pass />} />
+        {/* <Route path='/ad_home/blocks' element={<Blocks />} /> */}
+        <Route path='/ad_home' element={<Ad_home />} />
+
+
+
+
+
 
       </Routes>
     </div>

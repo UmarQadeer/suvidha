@@ -8,7 +8,7 @@ import './css/slider.css'
 
 export function Slider() {
     return (
-      <Carousel>
+      <Carousel className='pics'>
         <Carousel.Item>
           <img
             className="d-block w-100"
