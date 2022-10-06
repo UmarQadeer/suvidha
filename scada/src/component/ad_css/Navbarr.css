@@ -1,0 +1,8 @@
+.navbarr_background{
+    background: rgba(132,251,255,1);
+}
+.active, ::after{
+  background-color: #c3b3d7;
+  border-radius: 10px;
+  text-decoration: underline;
+}

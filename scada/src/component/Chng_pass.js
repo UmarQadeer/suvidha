@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
+import { Navbar_r } from '../component/Navbar';
 
 export function Chng_pass() {
 
@@ -12,6 +13,7 @@ export function Chng_pass() {
     return (
 
         <>
+               <Navbar_r />
 
             <Container>
                 <hr/>

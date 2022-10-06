@@ -3,6 +3,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import { Navbar_r } from '../component/Navbar';
 import './css/new_conn.css'
 
 
@@ -12,7 +13,7 @@ export function New_conn() {
   
     return (
         <>
-
+<Navbar_r />
             <Container>
                 <hr />
                 <h3> New connection</h3>

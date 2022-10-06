@@ -5,11 +5,13 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import pole from '../slider/pole.jpg';
 import "./css/Content.css";
+import { Navbar_r } from '../component/Navbar';
 
 
 export function Content() {
     return (
         <>
+        
             <Container className="comp_row">
                 <Row className="single_card">
                     <Col className='justify-content-center d-flex'>
@@ -127,7 +129,7 @@ export function Content() {
             <Container>
                 <Row className="about_us">
                     <hr />
-                    <h3>ABOUT US</h3>
+                    <h3>About Us</h3>
                     <hr />
 
                     <Col>

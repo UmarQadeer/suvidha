@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { Navbar_r } from '../component/Navbar';
 
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
@@ -13,7 +14,7 @@ export function For_pass() {
     return (
 
         <>
-
+<Navbar_r />
             <Container>
                 <hr />
                 <h3>Forgot Password</h3>

@@ -41,6 +41,8 @@
     padding: 1rem !important;
     width: 100%;
   }
+ 
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
@@ -54,4 +56,25 @@ h3 {
   font-size: 3rem !important;
 
   text-shadow: 5px 4px 5px #264a4b;
+}
+
+
+.common_csss {
+  border-radius: 25px 25px 100px 25px;
+  -moz-border-radius: 25px 25px 100px 25px;
+  -webkit-border-radius: 25px 25px 100px 25px;
+  border: 2px outset #000000;
+  margin: auto;
+  width: 93%;
+  padding: 2rem;
+  -webkit-box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
+  box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
+}
+
+@media (max-width:991px) and (min-width:360px) {
+  .common_csss {
+    padding: 0.5rem !important;
+    /* width: 50%; */
+  }
 }

@@ -2,6 +2,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// import fooo from '../slider/fooo.png';
 
 
 
@@ -11,7 +12,8 @@ export function Footer() {
         <>
 
 
-            <Container  style={{ padding:'1rem'}}>
+            <Container className="qwe" style={{ padding: '1rem' }}>
+            {/* <Container fluid> */}
                 <Row className="single_card">
                     <Col className='justify-content-center d-flex'>
 
@@ -35,18 +37,12 @@ export function Footer() {
 
                     </Col>
                 </Row>
+                {/* <Row style={{display:"flex"}}>
+                <img className="foot_pic" src={fooo}  alt="Footer pic    " />
+
+                </Row> */}
+
             </Container>
-
-
-
-
-
-
-
-
-
-
-
 
         </>
     )
