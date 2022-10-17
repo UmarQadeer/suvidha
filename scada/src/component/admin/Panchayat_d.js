@@ -17,7 +17,7 @@ export function Panchayat_d() {
 
             <Container >
                 <hr />
-                <h3>Panchayat Details</h3>
+                <h5>Panchayat Details</h5>
                 <hr />
                 <br />
 

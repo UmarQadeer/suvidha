@@ -1,8 +1,15 @@
-.navbar_background{
-    background: rgba(132,251,255,1);
+.navbar_background,.navbarr_background{
+    background: rgb(6, 80, 83);
+    /* background: rgba(132,251,255,1); */
+
 }
 .active, ::after{
-  background-color: #c3b3d7;
-  border-radius: 10px;
-  text-decoration: underline;
+  background-color: #797979 !important;
+  border-radius: 5px 5px 15px 5px; 
+}
+.logo{
+  height: 35px;
+}
+.nav-link:hover, .nav-link:focus {
+  color: rgba(132,251,255,1) !important;
 }

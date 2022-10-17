@@ -2,18 +2,18 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import fooo from '../slider/fooo.png';
-
-
 
 export function Footer() {
+
+
+
     return (
 
         <>
 
 
             <Container style={{ padding: '1rem' }}>
-            {/* <Container fluid> */}
+                {/* <Container fluid> */}
                 <Row className="single_card">
                     <Col className='justify-content-center d-flex'>
 
@@ -36,8 +36,10 @@ export function Footer() {
 
 
                     </Col>
+                    <a className='uparr'  href="#">&#8613;</a>
                 </Row>
-                </Container>
+              
+            </Container>
 
         </>
     )

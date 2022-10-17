@@ -31,8 +31,10 @@ export function Sidebar() {
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Connection type <span style={{ float: 'right' }}>➕   </span></td>
-
+                        <Nav.Link as={NavLink} to="/admin/conn_type_d">Connection Type <span style={{ float: 'right' }}>➕   </span></Nav.Link>
+                    </tr>
+                    <tr>
+                        <Nav.Link as={NavLink} to="/admin/temp_app_d">Temp Applicant <span style={{ float: 'right' }}>➕   </span></Nav.Link>
                     </tr>
                     <tr>
 
@@ -51,51 +53,52 @@ export function Sidebar() {
                     </tr>
 
 
-                
-                <tr>
-                    <td>Temp Applicants<span style={{ float: 'right' }}>➕   </span></td>
 
-                </tr>
-                <tr>
-                    <td>Tension type<span style={{ float: 'right' }}>➕   </span></td>
+                    <tr>
+                        <Nav.Link as={NavLink} to="/admin/tariff_d">Tarrif <span style={{ float: 'right' }}>➕   </span></Nav.Link>
 
-                </tr>
-                <tr>
-                    <td>Users<span style={{ float: 'right' }}>➕   </span></td>
+                    </tr>
+                    <tr>
+                        <Nav.Link as={NavLink} to="/admin/village_d">Village <span style={{ float: 'right' }}>➕   </span></Nav.Link>
 
-                </tr>
-                <tr>
-                    <td>Villages<span style={{ float: 'right' }}>➕   </span></td>
+                    </tr>
+                    <tr>
+                        <td>Tension type<span style={{ float: 'right' }}>➕   </span></td>
 
-                </tr>
-            </tbody>
+                    </tr>
+                    <tr>
+                    <Nav.Link as={NavLink} to="/admin/user_d">User <span style={{ float: 'right' }}>➕   </span></Nav.Link>
 
-        </Table>
 
-        <Table bordered hover>
-        <thead>
-            <tr>
-                <th>Select Discom Office</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <Nav.Link as={NavLink} to="/admin/division_d">Division <span style={{ float: 'right' }}>➕   </span></Nav.Link>
+                    </tr>
+                </tbody>
 
-            </tr>
-            <tr>
-                <Nav.Link as={NavLink} to="/admin/sub_division_d">Sub Division <span style={{ float: 'right' }}>➕   </span></Nav.Link>
+            </Table>
 
-            </tr>
-            <tr>
-                <Nav.Link as={NavLink} to="/admin/section_d">Section <span style={{ float: 'right' }}>➕   </span></Nav.Link>
+            <Table bordered hover>
+                <thead>
+                    <tr>
+                        <th>Select Discom Office</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <Nav.Link as={NavLink} to="/admin/division_d">Division <span style={{ float: 'right' }}>➕   </span></Nav.Link>
 
-            </tr>
+                    </tr>
+                    <tr>
+                        <Nav.Link as={NavLink} to="/admin/sub_division_d">Sub Division <span style={{ float: 'right' }}>➕   </span></Nav.Link>
 
-        </tbody>
+                    </tr>
+                    <tr>
+                        <Nav.Link as={NavLink} to="/admin/section_d">Section <span style={{ float: 'right' }}>➕   </span></Nav.Link>
 
-    </Table>
-  
+                    </tr>
+
+                </tbody>
+
+            </Table>
+
         </>
     )
 }

@@ -14,7 +14,7 @@ export function Division() {
 
             <Container >
                 <hr />
-                <h3>Add Division</h3>
+                <h5>Add Division</h5>
                 <hr />
                 <br />
 
@@ -33,7 +33,7 @@ export function Division() {
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formBasicblock">
                                     <Form.Label>Division Name</Form.Label>
-                                    <Form.Control type="text" placeholder="New Name" />
+                                    <Form.Control type="text" placeholder="" />
                                 </Form.Group>
 
                               

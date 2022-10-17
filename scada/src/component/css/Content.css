@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 .about_us{
-    /* padding: 5rem; */
+   margin-top: 50px !important;
     padding: 0rem 5rem 5rem 5rem;
 }
 @media (max-width:989px) and  (min-width:360px) {
@@ -19,4 +19,9 @@
       margin: 0rem !important;
     }
 
+  }
+  .abt_us_h {
+    margin-bottom: 30px;
+    text-align: center;
+    /* padding: 4rem; */
   }

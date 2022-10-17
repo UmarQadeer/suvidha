@@ -10,14 +10,14 @@ import { Navbar_admin } from './Navbarr';
 import { Sidebar } from './Sidebar';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
-export function Block_d() {
+export function Village_d() {
     return (
         <>
             <Navbar_admin />
 
             <Container >
                 <hr />
-                <h5>Block Details</h5>
+                <h5>Village Details</h5>
                 <hr />
                 <br />
 
@@ -35,7 +35,7 @@ export function Block_d() {
                         <Form className='common_csss' >
                             <Row className="mb-3">
                                 <Button style={{ "background": "none", "border": "none" }} variant="light" className="m-1" size="sm">
-                                    <Nav.Link style={{ float: 'right' }} as={NavLink} to="/admin/block">    Add Block   </Nav.Link>
+                                    <Nav.Link style={{ float: 'right' }} as={NavLink} to="/admin/village">    Add Village   </Nav.Link>
                                 </Button>
                                 <Table bordered hover size="sm">
                                     <thead>

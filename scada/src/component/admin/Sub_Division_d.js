@@ -17,7 +17,7 @@ export function Sub_Division_d() {
 
             <Container >
                 <hr />
-                <h3>Sub Division Details</h3>
+                <h5>Sub Division Details</h5>
                 <hr />
                 <br />
 

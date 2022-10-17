@@ -3,9 +3,6 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { Navbar_r } from '../component/Navbar';
 
-import Nav from 'react-bootstrap/Nav';
-import { NavLink } from 'react-router-dom';
-
 export function For_pass() {
 
     const hhu = () => {
@@ -14,18 +11,18 @@ export function For_pass() {
     return (
 
         <>
-<Navbar_r />
+            <Navbar_r />
             <Container>
-                <hr />
-                <h3>Forgot Password</h3>
-                <hr />
+                <br />
+                <br />
                 <br />
                 <Form className='common_css'>
-
+                    <h5>Forgot Password</h5>
+                    <br />
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Mobile No.</Form.Label>
-                        <Form.Control type="tel" placeholder="Enter mobile number" />
+                        <Form.Label>Enter Mobile No.</Form.Label>
+                        <Form.Control type="tel" placeholder="" />
                     </Form.Group>
 
 
@@ -35,7 +32,7 @@ export function For_pass() {
 
                 </Form>
             </Container>
-            <br/><br/><br/>  <br/><br/><br/>  <br/><br/><br/>  <br/><br/><br/> <br/><br/>
+            <br /><br /><br />  <br /><br /><br />  <br /><br /><br />  <br /><br /><br /> <br /><br />
 
         </>
     )

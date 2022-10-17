@@ -3,7 +3,8 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
-import { Navbar_r } from '../component/Navbar';
+import tw from '../slider/tw.png';
+
 
 
 
@@ -20,17 +21,23 @@ export function Sign_In() {
     return (
 
         <>
-                 <Navbar_r />
+            
 
-            <Container>
-                <hr />
-                <h3 className='sq'>Sign In</h3>
-                <hr />
                 <br />
-                <Form className='common_css'>
+                <br />
+                <br />
+
+                <Form className='common_cs sign_in_form' >
+                <img
+                  className="sign_in_pic w-100"
+                  src={tw}
+                  alt="First slide"
+                />
+                    <h5>Log In</h5>
+                    <br />
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Enter Mobile No.</Form.Label>
-                        <Form.Control type="email" placeholder="Enter mobile number" />
+                        <Form.Control type="email" placeholder="" />
                         {/* <Form.Text className="text-muted">
                             We'll never share your email with anyone else.
                         </Form.Text> */}
@@ -38,7 +45,7 @@ export function Sign_In() {
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="" />
                     </Form.Group>
 
                     <Button variant="primary" className="m-1" size="sm">
@@ -56,9 +63,9 @@ export function Sign_In() {
                         <Nav.Link as={NavLink} onClick={closeTab} to="/sign_up">Sign Up</Nav.Link>
                     </Button>to get in touch ✔️
                 </Form>
-            </Container>
+            {/* </Container> */}
 
-            <br /><br /><br />  <br /><br /><br />  <br /><br /><br /> <br />
+            {/* <br /><br /><br />  <br /><br /><br />  <br /><br /><br /> <br /> */}
 
         </>
     )

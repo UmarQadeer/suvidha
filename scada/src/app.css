@@ -1,6 +1,10 @@
 .htmll {
-  background: rgb(235, 214, 255);
-  background: linear-gradient(0deg, rgba(235, 214, 255, 1) 0%, rgba(132, 251, 255, 1) 100%);
+  font-size: small;
+  background: linear-gradient(0deg, rgba(235, 214, 255, 1) 0%, rgb(185, 245, 247) 100%);
+  /* background-image: url("slider/q1.png");
+  background-size: 600px;
+  background-position: center;
+  background-repeat: no-repeat; */
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -15,7 +19,6 @@
   border: 1px solid #b7b7b7;
   -webkit-border-radius: 11px;
   border-radius: 11px;
-  font: normal 16px/normal "Courier New", Courier, monospace;
   background: rgba(252, 252, 252, 1);
   -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
   -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -24,16 +27,18 @@
 }
 
 .common_css {
-  border-radius: 25px 25px 100px 25px;
-  -moz-border-radius: 25px 25px 100px 25px;
-  -webkit-border-radius: 25px 25px 100px 25px;
+
   border: 2px outset #000000;
   margin: auto;
   width: 50%;
-  padding: 5rem;
-  -webkit-box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
-  box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
+  padding: 4rem;
+  -webkit-box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 25px 25px 100px 25px;
+  -moz-border-radius: 25px 25px 100px 25px;
+  -webkit-border-radius: 25px 25px 100px 25px;
+  /* border: 4px outset #000000; */
 }
 
 @media (max-width:991px) and (min-width:360px) {
@@ -47,33 +52,85 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 
-
-/* @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap'); */
-h3 {
+h5 {
   text-align: center;
-  font-family: 'Water Brush', cursive;
-  color: #376b6c;
-  font-size: 3rem !important;
-  text-shadow: 5px 4px 5px #264a4b;
+  text-decoration: underline;
 }
 
 
 .common_csss {
-  border-radius: 25px 25px 100px 25px;
-  -moz-border-radius: 25px 25px 100px 25px;
-  -webkit-border-radius: 25px 25px 100px 25px;
+
   border: 2px outset #000000;
   margin: auto;
   width: 93%;
   padding: 2rem;
-  -webkit-box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
-  -moz-box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
-  box-shadow: -20px 25px 27px 27px rgba(0, 0, 0, 0.69);
+  -webkit-box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  border-radius: 25px 25px 100px 25px;
+  -moz-border-radius: 25px 25px 100px 25px;
+  -webkit-border-radius: 25px 25px 100px 25px;
 }
 
 @media (max-width:991px) and (min-width:360px) {
   .common_csss {
     padding: 0.5rem !important;
     /* width: 50%; */
+
   }
+}
+
+
+
+.common_cs {
+  position: absolute;
+  /* -webkit-box-shadow: -13px 17px 14px 3px rgba(0,0,0,0.75);
+   -moz-box-shadow: -13px 17px 14px 3px rgba(0,0,0,0.75);
+   box-shadow: -13px 17px 14px 3px rgba(0,0,0,0.75); 
+   padding: 1rem; 
+   border: 2px outset #000000; 
+   border-radius: 25px 25px 100px 25px;
+  -moz-border-radius: 25px 25px 100px 25px;
+  -webkit-border-radius: 25px 25px 100px 25px; */
+}
+
+
+
+
+.slider_pic {
+  -webkit-box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -13px 17px 14px 3px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  border: 2px outset #000000;
+  border-radius: 25px 25px 100px 25px;
+  -moz-border-radius: 25px 25px 100px 25px;
+  -webkit-border-radius: 25px 25px 100px 25px;
+}
+
+@media (max-width:770px) and (min-width:361px) {
+  .slider_pic {
+    height: 210px;
+  }
+
+  .common_cs {
+    padding: 1rem;
+  }
+}
+
+.uparr {
+  text-decoration: none;
+  color: #065053;
+  float: right;
+  /* margin-bottom: -50px !important; */
+  font-size: 2rem;
+}
+
+.sign_in_pic {
+  position: absolute;
+  z-index: -1;
+}
+
+.sign_in_form {
+  z-index: 1;
 }

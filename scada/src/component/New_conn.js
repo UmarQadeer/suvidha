@@ -10,18 +10,19 @@ import './css/new_conn.css'
 
 
 export function New_conn() {
-  
+
     return (
         <>
-<Navbar_r />
+            <Navbar_r />
             <Container>
-                <hr />
-                <h3> New connection</h3>
-                <hr />
                 <br />
-
+                <br />
+                <br />
                 <Form className='common_css'>
-
+                    <hr />
+                    <h5>NEW CONNECTION</h5>
+                    <hr />
+                    <br />
                     {/* first part starts************************************************ */}
 
                     <Row className="mb-3">
@@ -40,6 +41,7 @@ export function New_conn() {
                             <Form.Label>Connection Details</Form.Label>
                             <Form.Select aria-label="Default select example" size="sm">
                                 {/* <option>Open this select menu</option> */}
+                                
                                 <option value="1">Low Tension</option>
                                 <option value="2">High Tension</option>
 
@@ -75,7 +77,7 @@ export function New_conn() {
                         <Form.Group as={Col}>
                             <Form.Label>Load</Form.Label>
                             {/* <Form.Select aria-label="Default select example" size="sm"> */}
-                            <Form.Control type="text" placeholder="Enter Required Load " size="sm" />
+                            <Form.Control type="text" placeholder="" size="sm" />
                         </Form.Group>
                     </Row>
                     <br />
@@ -83,7 +85,7 @@ export function New_conn() {
                     {/* second part starts****************************************************** */}
 
                     <br />   <br />    <hr />
-                    <h4>LOCATION OF PERMISES WHERE SUPPLY IS REQUIRED</h4>
+                    <h5>LOCATION OF PERMISES WHERE SUPPLY IS REQUIRED</h5>
                     <hr />
                     <br />
 
@@ -163,7 +165,7 @@ export function New_conn() {
                     {/* third part starts*********************************************** */}
 
                     <br />   <br />    <hr />
-                    <h4>APPLICANTS DETAILS</h4>
+                    <h5>APPLICANTS DETAILS</h5>
                     <hr />
                     <br />
 
@@ -172,19 +174,19 @@ export function New_conn() {
                     <Row className="mb-3">
                         <Form.Group as={Col} controlId="formGridF_name">
                             <Form.Label>Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Your Name" />
+                            <Form.Control type="text" placeholder="" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridL_Name">
                             <Form.Label>Father/Husband's name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Father's / Husband's Name" />
+                            <Form.Control type="text" placeholder="" />
                         </Form.Group>
                     </Row>
 
                     <Row className="mb-3">
                         <Form.Group as={Col} controlId="formGridgen">
                             <Form.Label>Gender</Form.Label>
-                            <Form.Control type="text" placeholder="Gender" />
+                            <Form.Control type="text" placeholder="" />
                         </Form.Group>
 
 
@@ -197,12 +199,12 @@ export function New_conn() {
                     <Row className="mb-3">
                         <Form.Group as={Col} controlId="formGridtel">
                             <Form.Label>Mobile No.</Form.Label>
-                            <Form.Control type="tel" placeholder="Enter Mobile Number" />
+                            <Form.Control type="tel" placeholder="" />
                         </Form.Group>
 
                         <Form.Group as={Col} controlId="formGridemail">
                             <Form.Label>Email</Form.Label>
-                            <Form.Control type="email" placeholder="Enter E-mail address" />
+                            <Form.Control type="email" placeholder="" />
                         </Form.Group>
                     </Row>
 
@@ -210,7 +212,7 @@ export function New_conn() {
 
                     <Form.Group className="mb-3" controlId="formGridAddress1">
                         <Form.Label>Address</Form.Label>
-                        <Form.Control placeholder="1234 Main St" />
+                        <Form.Control placeholder="" />
                     </Form.Group>
 
 

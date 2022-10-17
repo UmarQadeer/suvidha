@@ -17,7 +17,7 @@ export function Division_d() {
 
             <Container >
                 <hr />
-                <h3>Division Details</h3>
+                <h5>Division Details</h5>
                 <hr />
                 <br />
 

@@ -14,7 +14,7 @@ export function District() {
 
             <Container >
                 <hr />
-                <h3>Add District</h3>
+                <h5>Add District</h5>
                 <hr />
                 <br />
 
@@ -33,7 +33,7 @@ export function District() {
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formBasicblock">
                                     <Form.Label>District Name</Form.Label>
-                                    <Form.Control type="text" placeholder="New Name" />
+                                    <Form.Control type="text" placeholder="" />
                                 </Form.Group>
 
                               

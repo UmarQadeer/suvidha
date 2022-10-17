@@ -12,7 +12,7 @@ export function Homee() {
             <Container>
 
                 <hr />
-                <h3> Scada Bhawan Admin Panel</h3>
+                <h5>Dashboard</h5>
                 <hr />
                 <br />
                 <Row >

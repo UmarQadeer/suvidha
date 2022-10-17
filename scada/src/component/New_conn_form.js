@@ -1,31 +1,32 @@
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Nav from 'react-bootstrap/Nav';
-import { NavLink } from 'react-router-dom';
 import { Navbar_r } from '../component/Navbar';
-
-export function Chng_pass() {
+export function New_conn_form() {
 
     const hhu = () => {
         alert("enter otp received");
+        // $('.qw').click(function () {
+        //     $('input').removeAttr('disabled');
+        //  });
     }
     return (
 
         <>
-               <Navbar_r />
-
+            <Navbar_r />
             <Container>
-            <br />
+                <br />
                 <br />
                 <br />
 
                 <Form className='common_css'>
-                <h5>Change Password</h5>
+                    <h5>
+                        Register Mobile for New Connection
+                    </h5>
                     <br />
 
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Enter Mobile No.</Form.Label>
+                    <Form.Group className="mb-3 qw" controlId="formBasicEmail">
+                        <Form.Label >Mobile No.</Form.Label>
                         <Form.Control type="tel" placeholder="" />
                     </Form.Group>
 
@@ -36,7 +37,7 @@ export function Chng_pass() {
 
                 </Form>
             </Container>
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br />  <br /><br /><br />  <br /><br /><br />  <br /><br /><br /> <br /><br />
 
         </>
     )

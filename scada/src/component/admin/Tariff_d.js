@@ -10,14 +10,15 @@ import { Navbar_admin } from './Navbarr';
 import { Sidebar } from './Sidebar';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
-export function Section_d() {
+
+export function Tariff_d() {
     return (
         <>
             <Navbar_admin />
 
             <Container >
                 <hr />
-                <h5>Section Details</h5>
+                <h5>Tarrif Details</h5>
                 <hr />
                 <br />
 
@@ -35,7 +36,7 @@ export function Section_d() {
                         <Form className='common_csss' >
                             <Row className="mb-3">
                                 <Button style={{ "background": "none", "border": "none" }} variant="light" className="m-1" size="sm">
-                                    <Nav.Link style={{ float: 'right' }} as={NavLink} to="/admin/section">    Add Section   </Nav.Link>
+                                    <Nav.Link style={{ float: 'right' }} as={NavLink} to="/admin/tariff">    Add Tariff   </Nav.Link>
                                 </Button>
                                 <Table bordered hover size="sm">
                                     <thead>
@@ -43,6 +44,7 @@ export function Section_d() {
                                             <th>Serial No.</th>
 
                                             <th>District Name</th>
+                                            <th>Block Name</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -52,6 +54,7 @@ export function Section_d() {
                                             <td>1</td>
 
                                             <td>Patna</td>
+                                            <td>Alamganj</td>
 
                                             <td>
                                                 <Button style={{ "background": "none", "border": "none" }} variant="light" className="m-1" size="sm">
@@ -67,7 +70,7 @@ export function Section_d() {
                                             <td>2</td>
 
                                             <td>Gaya</td>
-
+                                            <td>Karimganj</td>
                                             <td>
                                                 <Button style={{ "background": "none", "border": "none" }} variant="light" className="m-1" size="sm">
                                                     ✏️
@@ -88,26 +91,6 @@ export function Section_d() {
 
 
                         </Form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

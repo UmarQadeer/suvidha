@@ -7,14 +7,14 @@ import Row from 'react-bootstrap/Row';
 import { Navbar_admin } from './Navbarr';
 import { Sidebar } from './Sidebar';
 
-export function Panchayat() {
+export function Village() {
     return (
         <>
             <Navbar_admin />
 
             <Container >
                 <hr />
-                <h5>Add Panchayat</h5>
+                <h5>Add Village</h5>
                 <hr />
                 <br />
 
@@ -32,9 +32,10 @@ export function Panchayat() {
                         <Form className='common_csss' >
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formBasicblock">
-                                    <Form.Label>Panchayat Name</Form.Label>
+                                    <Form.Label>Village Name</Form.Label>
                                     <Form.Control type="text" placeholder="" />
                                 </Form.Group>
+
                                 <Form.Group as={Col} controlId="formBasicbdist">
                                     <Form.Label>District</Form.Label>
                                     <Form.Select aria-label="Default select example" >
@@ -45,8 +46,20 @@ export function Panchayat() {
 
                                     </Form.Select>
                                 </Form.Group>
+                                
                                 <Form.Group as={Col} controlId="formBasicbdist">
                                     <Form.Label>Block</Form.Label>
+                                    <Form.Select aria-label="Default select example" >
+                                        {/* <option>Open this select menu</option> */}
+                                        <option>Choose...</option>
+                                        <option value="1">Low Tension</option>
+                                        <option value="2">High Tension</option>
+
+                                    </Form.Select>
+                                </Form.Group>
+                                
+                                <Form.Group as={Col} controlId="formBasicbdist">
+                                    <Form.Label>Panchayat</Form.Label>
                                     <Form.Select aria-label="Default select example" >
                                         {/* <option>Open this select menu</option> */}
                                         <option>Choose...</option>
@@ -94,7 +107,7 @@ export function Panchayat() {
                     </Col>
                 </Row>
             </Container>
-
+          
         </>
     )
 }

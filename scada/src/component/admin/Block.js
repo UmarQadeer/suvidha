@@ -14,7 +14,7 @@ export function Block() {
 
             <Container >
                 <hr />
-                <h3>Add Block</h3>
+                <h5>Add Block</h5>
                 <hr />
                 <br />
 
@@ -32,8 +32,8 @@ export function Block() {
                         <Form className='common_css' >
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formBasicblock">
-                                    <Form.Label>Add Block</Form.Label>
-                                    <Form.Control type="text" placeholder="Block Name" />
+                                    <Form.Label>Block Name</Form.Label>
+                                    <Form.Control type="text" placeholder="" />
                                 </Form.Group>
 
                                 <Form.Group as={Col} controlId="formBasicbdist">

@@ -17,7 +17,7 @@ export function District_d() {
 
             <Container >
                 <hr />
-                <h3>District Details</h3>
+                <h5>District Details</h5>
                 <hr />
                 <br />
 

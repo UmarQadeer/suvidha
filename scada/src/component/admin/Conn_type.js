@@ -7,14 +7,14 @@ import Row from 'react-bootstrap/Row';
 import { Navbar_admin } from './Navbarr';
 import { Sidebar } from './Sidebar';
 
-export function Panchayat() {
+export function Conn_type() {
     return (
         <>
             <Navbar_admin />
 
             <Container >
                 <hr />
-                <h5>Add Panchayat</h5>
+                <h5>Add Connection Type</h5>
                 <hr />
                 <br />
 
@@ -29,24 +29,15 @@ export function Panchayat() {
 
                     <Col sm={10}>
 
-                        <Form className='common_csss' >
+                        <Form className='common_css' >
                             <Row className="mb-3">
                                 <Form.Group as={Col} controlId="formBasicblock">
-                                    <Form.Label>Panchayat Name</Form.Label>
+                                    <Form.Label>Connection Type</Form.Label>
                                     <Form.Control type="text" placeholder="" />
                                 </Form.Group>
-                                <Form.Group as={Col} controlId="formBasicbdist">
-                                    <Form.Label>District</Form.Label>
-                                    <Form.Select aria-label="Default select example" >
-                                        {/* <option>Open this select menu</option> */}
-                                        <option>Choose...</option>
-                                        <option value="1">Low Tension</option>
-                                        <option value="2">High Tension</option>
 
-                                    </Form.Select>
-                                </Form.Group>
                                 <Form.Group as={Col} controlId="formBasicbdist">
-                                    <Form.Label>Block</Form.Label>
+                                    <Form.Label>Tension Type</Form.Label>
                                     <Form.Select aria-label="Default select example" >
                                         {/* <option>Open this select menu</option> */}
                                         <option>Choose...</option>
@@ -94,7 +85,7 @@ export function Panchayat() {
                     </Col>
                 </Row>
             </Container>
-
+          
         </>
     )
 }

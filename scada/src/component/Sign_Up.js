@@ -17,36 +17,36 @@ export function Sign_Up() {
                  <Navbar_r />
 
             <Container>
-                <hr />
-                <h3>Register With Us</h3>
-                
-                <hr />
+            <br />
+                <br />
                 <br />
                 <Form className='common_css'>
+                <h5>Register With Us</h5>
+                    <br />
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Applicant's Name.</Form.Label>
-                        <Form.Control type="text" placeholder="Name" />
+                        <Form.Control type="text" placeholder="" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Email ID" />
+                        <Form.Control type="email" placeholder="" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Mobile No.</Form.Label>
-                        <Form.Control type="tel" placeholder="Enter mobile number" />
+                        <Form.Control type="tel" placeholder="" />
                     </Form.Group>
 
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="" />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicPassword">
                         <Form.Label>Re-enter Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Control type="password" placeholder="" />
                     </Form.Group>
 
                     <Button variant="primary" onClick={hhu} className="m-1" size="sm">
